@@ -1,6 +1,31 @@
 # Prerequisites
 *.d
 
+# Build outputs
+frogbard
+frogbard-*
+*.o
+*.a
+*.s
+
+# Test reports and large generated streams
+frogbard-test-report-*/
+bench/
+stats/*.bin
+coverage/
+fuzz/
+afl/
+
+# Compiler coverage
+*.profraw
+*.profdata
+*.gcda
+*.gcno
+
+# Temporary files
+*.tmp
+*.log
+
 # Compiled Object files
 *.slo
 *.lo
