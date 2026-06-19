@@ -1,22 +1,19 @@
-<p align="center">
-  <img src="assets/logo.png" alt="FrogBard-512 logo" width="300">
-</p>
+<div align="center">
 
-<h1 align="center">FrogBard-512</h1>
+<img src="./assets/logo.png" alt="FrogBard-512 logo" width="420">
 
-<p align="center">
-  <strong>A four-voice, 2048-bit permutation-based experimental hash written in low-level C11.</strong>
-</p>
+# FrogBard-512
 
-<p align="center">
-  512-bit digest · 1024-bit rate · 1024-bit capacity · 16-round permutation · streaming API · tree hashing · AVX2
-</p>
+**A four-voice, 2048-bit permutation-based experimental hash written in low-level C11.**
 
-> [!CAUTION]
-> **FrogBard-512 is an experimental research construction.**
-> It is new, unpublished, and has not received independent cryptanalysis.
-> Do not use it to protect production secrets, passwords, signatures, financial data, authentication protocols, or other security-critical systems.
-> Use established algorithms such as SHA-512, SHA-3, BLAKE2, or BLAKE3 for production work.
+`512-bit digest` · `1024-bit rate` · `1024-bit capacity` · `16-round permutation`  
+`Streaming API` · `Parallel tree hashing` · `AVX2 four-way backend`
+
+**Version 0.3-experimental**
+
+</div>
+
+---
 
 ## Overview
 
@@ -786,8 +783,7 @@ Very large multi-hour profile:
 ./tools/frogbard_absurd_test.sh --insane --install --jobs 32
 ```
 
-> [!WARNING]
-> The `--insane` profile can run for several hours and create many gigabytes of temporary streams, benchmark files, coverage data, fuzzing corpora, and logs.
+The `--insane` profile can run for several hours and create many gigabytes of temporary streams, benchmark files, coverage data, fuzzing corpora, and logs.
 
 The harness covers categories such as:
 
