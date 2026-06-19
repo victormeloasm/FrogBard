@@ -1,0 +1,35 @@
+# FrogBard-512 v0.3 experimental analysis notes
+
+Generated with the bundled frogbard-analyze utility.
+These are smoke tests only and are not evidence of cryptographic security.
+
+## Inverse permutation
+inverse: OK (256 samples per round, rounds 1..16)
+
+## Sampled linear scan (2 rounds)
+linear scan: rounds=2 samples=4096 masks=64 strongest_abs_bias=0.02221680 input_bit=16 output_bit=779
+
+## Sampled differential scan (2 rounds)
+differential scan: rounds=2 samples=2048 differences=32 strongest_bit_bias=0.04785156 input_bit=860 output_bit=265
+
+## Invariant smoke checks (1, 2, 4, 8, 16 rounds)
+invariant smoke: rounds=1 pattern=0 equal_voices=no equal_lanes=no
+invariant smoke: rounds=1 pattern=1 equal_voices=no equal_lanes=no
+invariant smoke: rounds=1 pattern=2 equal_voices=no equal_lanes=no
+invariant smoke: rounds=1 pattern=3 equal_voices=no equal_lanes=no
+invariant smoke: rounds=2 pattern=0 equal_voices=no equal_lanes=no
+invariant smoke: rounds=2 pattern=1 equal_voices=no equal_lanes=no
+invariant smoke: rounds=2 pattern=2 equal_voices=no equal_lanes=no
+invariant smoke: rounds=2 pattern=3 equal_voices=no equal_lanes=no
+invariant smoke: rounds=4 pattern=0 equal_voices=no equal_lanes=no
+invariant smoke: rounds=4 pattern=1 equal_voices=no equal_lanes=no
+invariant smoke: rounds=4 pattern=2 equal_voices=no equal_lanes=no
+invariant smoke: rounds=4 pattern=3 equal_voices=no equal_lanes=no
+invariant smoke: rounds=8 pattern=0 equal_voices=no equal_lanes=no
+invariant smoke: rounds=8 pattern=1 equal_voices=no equal_lanes=no
+invariant smoke: rounds=8 pattern=2 equal_voices=no equal_lanes=no
+invariant smoke: rounds=8 pattern=3 equal_voices=no equal_lanes=no
+invariant smoke: rounds=16 pattern=0 equal_voices=no equal_lanes=no
+invariant smoke: rounds=16 pattern=1 equal_voices=no equal_lanes=no
+invariant smoke: rounds=16 pattern=2 equal_voices=no equal_lanes=no
+invariant smoke: rounds=16 pattern=3 equal_voices=no equal_lanes=no

@@ -1,0 +1,4 @@
+# FrogBard-512 v0.3 experimental tree-mode vectors
+# Chunk size: 1 MiB. These are distinct from sequential hashes.
+empty  8ea132bfaa2f917c7cf0d90eb7912ce7035ad2f568bc9ac8f9af87cc63d86d05e6cb40d8f8469b47606249a8b789ede703f8217933e299ffe838d31d9b3f4be9
+abc    0886b02955bf455af0d7371a8e1bb3bb49afa13a6a8c9241844062da178c55bf28942fc0eb1511a5b0e6e62acaea904be0534e9a905a5b277c8874d22d82e5b2
